@@ -19,13 +19,11 @@
 
 //SOLUTION:
 
-let array = [1, 5.2, 4, 0, -1];
-let result = 0;
-function sum(array) {
-    for (let i = 0; i < array.length; i++) {
-        result += array[i];
-    }
-    return result;
+let numbers = [1, 5.2, 4, 0, -1];
+
+function sum(numbers) {
+    if (numbers.length === 0) return 0;
+    return numbers.reduce((total, n) => total + n, 0);
 }
 
-console.log(sum(array));
+console.log(sum(numbers));
