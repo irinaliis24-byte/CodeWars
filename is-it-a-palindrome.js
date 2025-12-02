@@ -6,8 +6,8 @@
 //SOLUTION:
 
 function isPalindrome(x) {
-    let str = x.toLowerCase();
-    return str.split('').reverse().join('') === str;
+  let str = x.toLowerCase();
+  return str.split('').reverse().join('') === str;
 }
 
 console.log(isPalindrome("madam"));
