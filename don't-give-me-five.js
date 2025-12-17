@@ -16,10 +16,8 @@ function dontGiveMeFive(start, end) {
     for (let i = start; i <= end; i++) {
         arr.push(i)
     }
-    const result = arr.filter((num) => Math.abs(num) % 10 !== 5).filter((num) => Math.abs(num) / 50 );
-    if (arr.includes(5)) {
-        
-    }
+    const result = arr.filter((num) => Math.abs(num) % 10 !== 5).filter((num) => Math.abs(num) < 50 || Math.abs(num) >= 60);
+
     return result.length;
 }
 
